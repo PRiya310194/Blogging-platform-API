@@ -20,6 +20,25 @@
 * Swagger-> Helps user to ease access data in HTML format
 * MySQL-> MySql Database,MySql JDBC driver
 
+## model
+* User
+* post
+* follow
+* comment
+## controller
+* UserController
+* postController
+* followController
+* commentController
+
+## service
+* UserService
+* postService
+* followService
+* commentService
+
+
+
 ## Working
 This project consist of four models namely UserModel, PostModel, Follow, Comments along with their corresponding dao classes, controller classes and service classes
 SQl-Queries has been handled with native query in the post repository and user repository as per need of the queries
@@ -27,5 +46,5 @@ Performed Annotation validation on all the Model class present in the MVC
 Performed Manual validation too with the need of it, as an example we cannot have more than one user with same name
 Created Exception handler as the exceptions should be handled and whatever the output we want to show the user on screen is written
 Relationship between Models or tables are given accordingly, relationship given as such of @ManyToOne for post model where more than one user can have more than one posts or many posts, In the model class of follow there is a @ManyToOne relationship between Users like one user follows other user if users are present in the database and parallel there are @ManyToOne relationship in between sender and receiver user and comment they sent to the post
-Swagger is added for the ease access of the project with link provided as follows : http://3.22.61.47/:8080/swagger-ui/index.html
-This project is deployed online with IP: 3.22.61.47 using Termius along with the help AWS-EC2 using various Linux commands so that the mysql database and commands works on it
+Swagger is added for the ease access of the project.
+
