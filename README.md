@@ -36,7 +36,14 @@
 * postService
 * followService
 * commentService
+## Project Flow
+* Controller The request comes from the client-side and hits the controller class, which then processes the request based on the request type and endpoints declared in the controller class's methods using annotations. The methods of the service class are called from the controller class.
 
+* Service The service class contains the main business logic for the music streaming system. The methods of the service class are called from the controller class, where we use in-built or native queries of the repository interface.
+
+* Repository The repository is an interface that extends the JPAREPOSITORY interface, and we used the methods of JPAREPOSITORY and native queries/queries by the method, which we write in the repository interface.
+
+* Database With the help of Hibernate, we were able to connect to the database. For this project, we used a MySQL database.
 
 
 ## Working
